@@ -55,6 +55,17 @@ void Jump()
         {
             gameObject.transform.position = startPos;
         }
+
+        if (collision.collider.tag == "EndObstacle")
+        {
+            gameObject.transform.position = startPos;
+        }
+
+        //if (collision.collider.tag == "Enemy")
+        //{
+          //  gameObject.transform.position = startPos;
+        //}
+
         else if (collision.collider.tag == "CheckPoint")
         {
 
@@ -62,4 +73,5 @@ void Jump()
         }
 
     }
+   
 }
